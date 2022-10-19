@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var myCitiesArray = ["Italy", "Spain", "Portugal", "Denmark", "Dublin"]
     
+    var friendsHomeArray = ["Makakilo", "Waipio", "Kaneohe"]
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -27,16 +28,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //Part8: 4 lines of code that create the cell and fill it with data
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
         //displays text in each row in Tableview
-        let text = myCitiesArray[indexPath.row]
+        let text = myFriendsArray[indexPath.row]
         cell.textLabel?.text = text
-        
+        cell.detailTextLabel?.text = friendsHomeArray[indexPath.row]
         return cell
     }
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         {
             //Part 8:  communicates to tableview how many rows to tableview. it will return the count whatever you have in the myFriends var
-            return myCitiesArray.count
+            return myFriendsArray.count
 
         }
      
