@@ -37,8 +37,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         restaurantImageData = dict!.object(forKey: "restaurantImages")
         as! [String]
     }
-        
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
@@ -55,7 +53,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
-    
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
         {
@@ -75,7 +72,3 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
         
     }
-        
-        
-    
-

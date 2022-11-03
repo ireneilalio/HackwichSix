@@ -4,7 +4,6 @@
 //
 //  Created by Irene Ilalio on 11/2/22.
 //
-
 import UIKit
 
 class detailViewController: UIViewController {
@@ -14,8 +13,6 @@ class detailViewController: UIViewController {
     
     //Part11-1
     var imagePass: String?
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +24,6 @@ class detailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
